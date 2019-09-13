@@ -17,7 +17,12 @@
         android:text="@string/i_am"
         android:textSize="55sp"
         android:layout_marginTop="30dp"
-        android:textColor="@color/colorPrimaryDark" />
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:id="@+id/text_poor"
@@ -26,13 +31,15 @@
         android:text="@string/poor"
         android:textSize="55sp"
         android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_toRightOf="@id/text_i_am"
         android:layout_alignBottom="@id/text_i_am"
         android:layout_toEndOf="@id/text_i_am"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp" />
-
-
 
     <ImageView
         android:id="@+id/imageView"
@@ -40,5 +47,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/coal"
         android:layout_centerInParent="true"
-        android:contentDescription="@string/coal_description"/>
+        android:contentDescription="@string/coal_description"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 </RelativeLayout>
